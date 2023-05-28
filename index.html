@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>goit-markup-hw-04</title>
+  <title>goit-markup-hw-07</title>
 
   <!-- Подключаем нормализатор -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
@@ -47,6 +47,90 @@
           <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button type="button" class="mobile-menu-open" js-open-menu>
+        <svg class="mobile-menu-open__icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu">
+          </use>
+        </svg>
+      </button>
+    </div>
+
+
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" js-menu-container>
+      <div class="container mobile-menu-container ">
+
+
+        <button class="mobile-menu__close-btn" js-close-menu>
+          <svg class="mobile-menu__close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-button">
+            </use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-site-nav list">
+          <li class="item"><a href="./index.html" class="link"> Studio </a></li>
+          <li class="item"><a href="./portfolio.html" class="link"> Portfolio </a></li>
+          <li class="item"><a href="" class="link"> Contacts</a></li>
+        </ul>
+        <address class="list mobile-menu-address">
+          <ul class="list mobile-menu-address-list">
+            <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
+            <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+
+        <div class="menu-container" id="menu-cintainer" data-menu>
+          <ul class="site-nav list">
+            <li class="item"><a href="./index.html" class="link current"> Studio </a></li>
+            <li class="item"><a href="./portfolio.html" class="link"> Portfolio </a></li>
+            <li class="item"><a href="" class="link"> Contacts</a></li>
+          </ul>
+          <address class="list header-address">
+            <ul class="list header-address-list">
+              <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
+              <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+            </ul>
+          </address>
+
+
+          <ul class="mobile-menu-socialinks  list">
+            <li class="socialinks-item">
+              <a class="socialinks-link link" href="">
+                <svg class="socialinks-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialinks-item">
+              <a class="socialinks-link link" href="">
+                <svg class="socialinks-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialinks-item">
+              <a class="socialinks-link link" href="">
+                <svg class="socialinks-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialinks-item">
+              <a class="socialinks-link link" href="">
+                <svg class="socialinks-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
 
@@ -555,6 +639,7 @@
 
   <!-- Ставим СКРИПТ перед закрывающим тегом body -->
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 
 </body>
 
