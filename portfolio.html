@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-04-page-portfolio</title>
+    <title>goit-markup-hw-07-page-portfolio</title>
 
     <!-- Подключаем нормализатор -->
     <link rel="stylesheet"
@@ -46,8 +46,75 @@
                     <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <!-- Иконка для мобильного меню -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu-open__icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu">
+                    </use>
+                </svg>
+            </button>
+
         </div>
 
+
+        <!-- Мобильное меню -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="mobile-menu__close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-button">
+                    </use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu list">
+                <li class="item"><a href="./index.html" class="link"> Studio </a></li>
+                <li class="item"><a href="./portfolio.html" class="link"> Portfolio </a></li>
+                <li class="item"><a href="" class="link"> Contacts</a></li>
+            </ul>
+
+            <address class="list mobile-menu-address">
+                <ul class="list mobile-menu-address-list">
+                    <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
+                    <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+
+            <ul class="mobile-menu-socialinks  list">
+                <li class="socialinks-item">
+                    <a class="socialinks-link link" href="">
+                        <svg class="socialinks-item-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socialinks-item">
+                    <a class="socialinks-link link" href="">
+                        <svg class="socialinks-item-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socialinks-item">
+                    <a class="socialinks-link link" href="">
+                        <svg class="socialinks-item-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socialinks-item">
+                    <a class="socialinks-link link" href="">
+                        <svg class="socialinks-item-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
     </header>
 
@@ -343,6 +410,7 @@
 
     <!-- Ставим СКРИПТ перед закрывающим тегом body -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
