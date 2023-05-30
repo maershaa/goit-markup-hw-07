@@ -408,7 +408,7 @@ margin-left: 40px;
   transition: color var(--transition-duration-and-func);
 }
 
-.mobile-menu-address-list a[href="mailto:info@devstudio.com"] {
+.mobile-menu-address-list .item:first-child .link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -417,7 +417,7 @@ margin-left: 40px;
   margin-bottom: 40px;
 }
 
-.mobile-menu-address-list a[href="tel:+110001111111"] {
+.mobile-menu-address-list .item:last-child .link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -445,13 +445,13 @@ margin-left: 40px;
 @media screen and (min-width: 768px) {
   .cutomers-list {
     column-gap: 24px;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .cutomers-list {
     flex-wrap: nowrap;
-    column-gap: 0;
     row-gap: 0;
   }
 }
@@ -461,9 +461,10 @@ margin-left: 40px;
   height: 88px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .customers-item {
     width: calc((100% - 48px) / 3);
+    max-width: 168px;
   }
 }
 
@@ -517,14 +518,17 @@ margin-left: 40px;
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer .container {
     column-gap: 24px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .footer .container {
-    display: flex;
-    align-items: baseline;
     flex-wrap: nowrap;
   }
 }
@@ -788,7 +792,7 @@ margin-left: 40px;
   text-align: center;
 
   max-width: 1440px;
-  height: 600px;
+  height: 432px;
   margin-left: auto;
   margin-right: auto;
 
@@ -803,6 +807,17 @@ margin-left: 40px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 436px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .section {
@@ -936,13 +951,14 @@ margin-left: 40px;
 
 @media screen and (min-width: 768px) {
   .goals-list .item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .goals-list .item {
     width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
   }
 }
 
@@ -1023,12 +1039,18 @@ margin-left: 40px;
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 72px;
+
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
   .team-member {
     /* width: calc((100%-24px) / 2); */
     margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
