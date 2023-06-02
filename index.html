@@ -198,15 +198,27 @@
         <h2 class="section-title">What are we doing</h2>
         <ul class="list screens-list">
           <li class="item">
-            <img src="./images/img1.jpg" alt="Desktop" width="360">
+            <picture>
+              <source srcset="./images/screens/desktop.jpg 1x, ./images/screens/desktop@2x.jpg 2x" type="image/jpeg" />
+              <img src="./images/screens/desktop.jpg" alt="Desktop" width="360">
+            </picture>
+
+
           </li>
 
           <li class="item">
-            <img src="./images/img2.jpg" alt="Screen" width="360">
+            <picture>
+              <source srcset="./images/screens/screen.jpg 1x, ./images/screens/screen@2x.jpg 2x" type="image/jpeg" />
+              <img src="./images/screens/screen.jpg" alt="Screen" width="360">
+            </picture>
+
           </li>
 
           <li class="item">
-            <img src="./images/img3.jpg" alt="Mobile phone" width="360">
+            <picture>
+              <source srcset="./images/screens/mb.jpg 1x, ./images/screens/mb@2x.jpg 2x" type="image/jpeg" />
+              <img src="./images/screens/mb.jpg" alt="Mobile phone" width="360">
+            </picture>
           </li>
 
         </ul>
@@ -220,7 +232,11 @@
         <h2 class="section-title">Our Team</h2>
         <ul class="team-list list">
           <li class="team-member">
-            <img src="./images/MarkGuerrero.jpg" alt="Mark Guerrero" width="264">
+            <picture>
+              <source srcset="./images/team/MarkGuerrero.jpg 1x, ./images/team/MarkGuerrero@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/team/MarkGuerrero.jpg" alt="Mark Guerrero" width="264">
+            </picture>
             <div class="member-and-position">
               <h3 class="title">Mark Guerrero</h3>
               <p class="text">Product Designer</p>
@@ -262,7 +278,10 @@
           </li>
 
           <li class="team-member">
-            <img src="./images/TomFord.jpg" alt="Tom Ford" width="264">
+            <picture>
+              <source srcset="./images/team/TomFord.jpg 1x, ./images/team/TomFord@2x.jpg 2x" type="image/jpeg" />
+              <img src="./images/team/TomFord.jpg" alt="Tom Ford" width="264">
+            </picture>
             <div class="member-and-position">
               <h3 class="title">Tom Ford</h3>
               <p class="text">Frontend Developer</p>
@@ -304,8 +323,11 @@
 
           </li>
           <li class="team-member">
-
-            <img src="./images/CamilaGarcia.jpg" alt="Camila Garcia" width="264">
+            <picture>
+              <source srcset="./images/team/CamilaGarcia.jpg 1x, ./images/team/CamilaGarcia@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/team/CamilaGarcia.jpg" alt="Camila Garcia" width="264">
+            </picture>
             <div class="member-and-position">
               <h3 class="title">Camila Garcia</h3>
               <p class="text">Marketing</p>
@@ -348,7 +370,11 @@
           </li>
 
           <li class="team-member">
-            <img src="./images/DanielWilson.jpg" alt="Daniel Wilson" width="264">
+            <picture>
+              <source srcset="./images/team/DanielWilson.jpg 1x, ./images/team/DanielWilson@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/team/DanielWilson.jpg" alt="Daniel Wilson" width="264">
+            </picture>
             <div class="member-and-position">
               <h3 class="title">Daniel Wilson</h3>
               <p class="text">UI Designer</p>
@@ -462,7 +488,7 @@
 
   <!-- Для нижней часті (подвала) странички -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-wrapper">
       <div class="footer-left-side">
         <a href="./index.html" class="logo-style link"> Web
           <span class="footer-logo">Studio</span> </a>
