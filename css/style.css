@@ -235,6 +235,13 @@ button {
   padding: 24px 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .header-address {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 /* Задаем флекс для списка (номер телеона и почта)  */
 .header-address-list {
   display: flex;
@@ -251,6 +258,8 @@ button {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
   }
 }
 
@@ -557,6 +566,7 @@ margin-left: 40px;
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-wrapper {
     width: 552px;
+    padding-left: 0;
   }
 }
 
@@ -801,7 +811,7 @@ margin-left: 40px;
 
 /* СЕКЦИЯ 1 (главная)*/
 .hero {
-  padding: 188px 0;
+  padding: 112px 0;
 
   text-align: center;
 
@@ -841,6 +851,7 @@ margin-left: 40px;
 
 @media screen and (min-width: 768px) {
   .hero {
+    height: 436px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -866,8 +877,14 @@ margin-left: 40px;
 }
 
 @media screen and (min-width: 1158px) {
-  .banner {
-    background-image: url("../images/car-desktop.jpg");
+  .hero {
+    padding: 188px 0;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg/bg-image-desktop.jpg");
   }
 }
 
@@ -884,18 +901,6 @@ margin-left: 40px;
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg/bg-image-desktop@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    height: 436px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .hero {
-    height: 600px;
   }
 }
 
@@ -994,6 +999,7 @@ margin-left: 40px;
   .goals-list {
     display: flex;
     column-gap: 24px;
+    row-gap: 72px;
     flex-wrap: wrap;
   }
 }
@@ -1024,8 +1030,10 @@ margin-left: 40px;
   }
 }
 
-.goals-list .item {
-  margin-bottom: 72px;
+@media screen and (max-width: 767px) {
+  .goals-list .item:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1084,16 +1092,15 @@ margin-left: 40px;
   background-color: #f4f4fd;
 }
 
-.team-list {
-  column-gap: 24px;
-
-  justify-content: center;
-}
-
 /* Стили для элементов ли с карточками членов команды */
 
 .team-list {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .team-list .team-member:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1102,6 +1109,7 @@ margin-left: 40px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
+    justify-content: center;
   }
 }
 
@@ -1117,7 +1125,6 @@ margin-left: 40px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 72px;
 
   width: 264px;
   margin-left: auto;
@@ -1305,7 +1312,7 @@ margin-left: 40px;
 
   font-size: 12px;
   color: var(--title-text-color);
-
+  background-color: #fcfcfc;
   transition: border-color var(--transition-duration-and-func);
 }
 
@@ -1348,6 +1355,7 @@ margin-left: 40px;
 .contact-form-message {
   font-size: 12px;
   color: var(--title-text-color);
+  background-color: #fcfcfc;
 }
 
 .contact-form-message::placeholder {
